@@ -1,0 +1,13 @@
+For the Gamma Smartwatch, the initial features to be implemented are as follows:
+
+
+Clock
+Accelerometer
+Heart Rate Monitor
+Step Counter
+Stopwatch/Timer/Alarms (so, some kind of audio buzzer)
+Play pre-set pattern of tones
+Gyro (for gestures)
+Longer battery life (and charged by USB).
+OLED display
+Ambient temperature
