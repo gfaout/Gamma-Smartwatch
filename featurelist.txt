@@ -11,3 +11,8 @@ Gyro (for gestures)
 Longer battery life (and charged by USB).
 OLED display
 Ambient temperature
+
+
+Optional Features:
+Bluetooth
+Haptic Feedback
