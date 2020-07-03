@@ -6261,17 +6261,16 @@ way dynamically.</text>
 <label x="-144.78" y="-109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="A4/BATT" class="0">
+<net name="A4/PPG" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P0.28/AIN4"/>
 <wire x1="68.58" y1="96.52" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 <label x="60.96" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-88.9" y1="-81.28" x2="-88.9" y2="-73.66" width="0.1524" layer="91"/>
-<label x="-88.9" y="-78.74" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="-198.12" y1="81.28" x2="-190.5" y2="81.28" width="0.1524" layer="91"/>
+<label x="-190.5" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D7/SD.CS" class="0">
@@ -6348,23 +6347,11 @@ way dynamically.</text>
 <label x="-127" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="D29/LED.CTRL" class="0">
+<net name="A5/TIA" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P0.29/AIN5"/>
 <wire x1="68.58" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
 <label x="63.5" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="-198.12" y1="76.2" x2="-190.5" y2="76.2" width="0.1524" layer="91"/>
-<label x="-190.5" y="76.2" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="A6/TIA" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="P0.30/AIN6"/>
-<wire x1="68.58" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
-<label x="63.5" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="6"/>
@@ -6372,16 +6359,29 @@ way dynamically.</text>
 <label x="-190.5" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="A7/PPG" class="0">
+<net name="A7/BATT" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="P0.31/AIN7"/>
 <wire x1="68.58" y1="88.9" x2="63.5" y2="88.9" width="0.1524" layer="91"/>
 <label x="63.5" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="-198.12" y1="81.28" x2="-190.5" y2="81.28" width="0.1524" layer="91"/>
-<label x="-190.5" y="81.28" size="1.27" layer="95" xref="yes"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="-88.9" y1="-81.28" x2="-88.9" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-88.9" y="-78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D30/LED.CTRL" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="P0.30/AIN6"/>
+<wire x1="68.58" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
+<label x="63.5" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="-198.12" y1="76.2" x2="-190.5" y2="76.2" width="0.1524" layer="91"/>
+<label x="-190.5" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
