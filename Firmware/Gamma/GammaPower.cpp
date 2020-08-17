@@ -1,3 +1,4 @@
+#include "GammaPower.h"
 const uint8_t chrgPin = 27;
 const uint8_t battPin = A4;
 
