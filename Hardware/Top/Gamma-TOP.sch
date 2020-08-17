@@ -4615,7 +4615,43 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <wire x1="-4.3307" y1="1.9558" x2="-3.2512" y2="1.9558" width="0.2032" layer="21"/>
 <wire x1="3.2512" y1="1.9558" x2="4.3307" y2="1.9558" width="0.2032" layer="21"/>
 </package>
+<package name="SOT23-5" urn="urn:adsk.eagle:footprint:18172172/1">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
+<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="0.4294" x2="1.27" y2="-0.4294" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.4294" x2="-1.27" y2="0.4294" width="0.2032" layer="21"/>
+<wire x1="-0.2684" y1="0.7088" x2="0.2684" y2="0.7088" width="0.2032" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<text x="-1.905" y="0" size="0.6096" layer="25" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="2.54" y="0" size="0.6096" layer="27" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+<polygon width="0.127" layer="21">
+<vertex x="-1.74625" y="-1.11125" curve="-90"/>
+<vertex x="-1.5875" y="-0.9525" curve="-90"/>
+<vertex x="-1.42875" y="-1.11125" curve="-90"/>
+<vertex x="-1.5875" y="-1.27" curve="-90"/>
+</polygon>
+</package>
 </packages>
+<packages3d>
+<package3d name="SOT23-5" urn="urn:adsk.eagle:package:18172171/2" type="model">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="SOT23-5"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="FT231X">
 <pin name="VCC" x="-12.7" y="15.24" length="short"/>
@@ -4644,6 +4680,19 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
 <text x="-10.16" y="18.034" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-18.288" size="1.778" layer="96" align="top-left">&gt;Value</text>
+</symbol>
+<symbol name="FT24C64A">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="SDA" x="-10.16" y="2.54" length="short"/>
+<pin name="GND" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="SCL" x="-10.16" y="0" length="short"/>
+<pin name="WP" x="-10.16" y="-2.54" length="short"/>
+<pin name="VCC" x="10.16" y="2.54" length="short" rot="R180"/>
+<text x="-7.62" y="6.35" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4683,6 +4732,102 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <attribute name="DIGIKEY" value="768-1156-5-ND"/>
 <attribute name="MFN" value="FT231XS-U"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FT24C64A" prefix="U">
+<description>&lt;h3&gt;I2C EEPROM 64 kB&lt;/h3&gt;
+&lt;b&gt;Arduino Library&lt;/b&gt;
+&lt;br&gt;https://github.com/LinnesLab/EEPROM_24C64A&lt;/br&gt;
+&lt;p&gt;
+&lt;b&gt;Digi-Key Part Number:&lt;/b&gt;
+1219-1261-1-ND
+&lt;b&gt;&lt;br&gt;Manufacturer Part Number:&lt;/b&gt;&lt;/br&gt;
+FT24C64A-ELR-T</description>
+<gates>
+<gate name="G$1" symbol="FT24C64A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="WP" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18172171/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1219-1261-1-ND"/>
+<attribute name="MFN" value="FT24C64A-ELR-T"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="NFC-Antenna">
+<packages>
+<package name="1462360151">
+<description>Footprint of 1462360151</description>
+<smd name="NFC1" x="-1.25" y="0" dx="3" dy="2" layer="1" rot="R90"/>
+<smd name="NFC2" x="1.25" y="0" dx="3" dy="2" layer="1" rot="R90"/>
+<circle x="-1.75" y="1" radius="0.25" width="0" layer="21"/>
+<wire x1="3.25" y1="1.75" x2="-3.25" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="1.75" x2="-3.25" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="3.25" y1="1.75" x2="3.25" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-3.25" x2="3.25" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-3.25" x2="-3.25" y2="-18.25" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-18.25" x2="11.75" y2="-18.25" width="0.127" layer="51"/>
+<wire x1="11.75" y1="-18.25" x2="11.75" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="11.75" y1="-3.25" x2="6" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="6" y1="-3.25" x2="3.25" y2="-3.25" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-0.5" x2="6" y2="-3.25" width="0.127" layer="51" curve="101.421186"/>
+<wire x1="-3.25" y1="1.75" x2="3.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="3.25" y1="1.75" x2="3.25" y2="-0.4375" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="1.75" x2="-3.25" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="-3.25" x2="5.875" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="5.875" y1="-3.25" x2="11.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="11.75" y1="-3.25" x2="11.75" y2="-18.25" width="0.127" layer="21"/>
+<wire x1="11.75" y1="-18.25" x2="-3.25" y2="-18.25" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="-18.25" x2="-3.25" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-0.4375" x2="5.875" y2="-3.25" width="0.127" layer="21" curve="101.548411"/>
+<text x="5" y="-2" size="1.27" layer="25">&gt;NAME</text>
+<text x="4.75" y="-20" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="1462360151">
+<pin name="NFC1" x="5.08" y="2.54" length="middle" rot="R180"/>
+<pin name="NFC2" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<wire x1="0" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOLEX-1462360151-ANTENNA" uservalue="yes">
+<description>This is a 15mm x 15mm x 0.27mm antenna
+with a resonant frequency of 13.56 Mhz.</description>
+<gates>
+<gate name="G$1" symbol="1462360151" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="1462360151">
+<connects>
+<connect gate="G$1" pin="NFC1" pad="NFC1"/>
+<connect gate="G$1" pin="NFC2" pad="NFC2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4811,6 +4956,17 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <part name="J1" library="LinnesLab-Connectors" deviceset="CONN_07" device="-1.27MM"/>
 <part name="SUPPLY8" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
 <part name="GND6" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="U5" library="LinnesLab-DigitalIC" deviceset="FT24C64A" device="" package3d_urn="urn:adsk.eagle:package:18172171/2"/>
+<part name="SUPPLY10" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
+<part name="GND5" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="C19" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661989/2" value="100n"/>
+<part name="SUPPLY11" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
+<part name="GND13" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="NFCANTENNA" library="NFC-Antenna" deviceset="MOLEX-1462360151-ANTENNA" device="" value="2.1 uH"/>
+<part name="GND2" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="GND4" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="C18" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661989/2" value="120p"/>
+<part name="C21" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661989/2" value="120p"/>
 </parts>
 <sheets>
 <sheet>
@@ -4956,7 +5112,9 @@ way dynamically.</text>
 <wire x1="261.62" y1="-38.1" x2="360.68" y2="-38.1" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="360.68" y1="68.58" x2="261.62" y2="68.58" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="261.62" y1="142.24" x2="360.68" y2="142.24" width="0.1524" layer="97" style="dashdot"/>
-<text x="35.56" y="205.74" size="10.16" layer="90">Gamma Top Version A</text>
+<text x="35.56" y="205.74" size="10.16" layer="90">Gamma Top Version B (Full Version)</text>
+<text x="-30.48" y="-43.18" size="5.08" layer="90">EEPROM Storage</text>
+<text x="269.24" y="-50.8" size="4.572" layer="90">NFC Tuning Circuit with Antenna</text>
 </plain>
 <instances>
 <instance part="GND14" gate="G$1" x="43.18" y="66.04" smashed="yes">
@@ -5353,6 +5511,44 @@ way dynamically.</text>
 <instance part="GND6" gate="G$1" x="-195.58" y="58.42" smashed="yes">
 <attribute name="VALUE" x="-195.58" y="58.166" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="U5" gate="G$1" x="-10.16" y="-78.74" smashed="yes">
+<attribute name="NAME" x="-17.78" y="-72.39" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-17.78" y="-86.36" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="2.54" y="-73.66" smashed="yes">
+<attribute name="VALUE" x="2.54" y="-70.866" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND5" gate="G$1" x="2.54" y="-86.36" smashed="yes">
+<attribute name="VALUE" x="2.54" y="-86.614" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C19" gate="G$1" x="10.16" y="-78.74" smashed="yes">
+<attribute name="NAME" x="11.684" y="-75.819" size="1.778" layer="95"/>
+<attribute name="VALUE" x="11.684" y="-80.899" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY11" gate="G$1" x="10.16" y="-71.12" smashed="yes">
+<attribute name="VALUE" x="10.16" y="-68.326" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND13" gate="G$1" x="10.16" y="-86.36" smashed="yes">
+<attribute name="VALUE" x="10.16" y="-86.614" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="NFCANTENNA" gate="G$1" x="304.8" y="-101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="294.64" y="-111.76" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="317.5" y="-111.76" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND2" gate="G$1" x="340.36" y="-86.36" smashed="yes">
+<attribute name="VALUE" x="340.36" y="-86.614" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND4" gate="G$1" x="299.72" y="-83.82" smashed="yes">
+<attribute name="VALUE" x="299.72" y="-84.074" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C18" gate="G$1" x="294.64" y="-78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="291.719" y="-77.216" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="296.799" y="-77.216" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C21" gate="G$1" x="337.82" y="-78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="334.899" y="-77.216" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="339.979" y="-77.216" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5632,6 +5828,28 @@ way dynamically.</text>
 <wire x1="-195.58" y1="71.12" x2="-195.58" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="GND"/>
+<wire x1="0" y1="-81.28" x2="2.54" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-81.28" x2="2.54" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="GND13" gate="G$1" pin="GND"/>
+<wire x1="10.16" y1="-83.82" x2="10.16" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="GND4" gate="G$1" pin="GND"/>
+<wire x1="297.18" y1="-78.74" x2="299.72" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-78.74" x2="299.72" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="2"/>
+<pinref part="GND2" gate="G$1" pin="GND"/>
+<wire x1="340.36" y1="-78.74" x2="340.36" y2="-83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
@@ -5837,6 +6055,17 @@ way dynamically.</text>
 <wire x1="-195.58" y1="73.66" x2="-195.58" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="VCC"/>
+<wire x1="0" y1="-76.2" x2="2.54" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-76.2" x2="2.54" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
+<wire x1="10.16" y1="-73.66" x2="10.16" y2="-71.12" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -5853,6 +6082,11 @@ way dynamically.</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="-198.12" y1="66.04" x2="-190.5" y2="66.04" width="0.1524" layer="91"/>
 <label x="-190.5" y="66.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="SDA"/>
+<wire x1="-22.86" y1="-76.2" x2="-20.32" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-22.86" y="-76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -5871,6 +6105,11 @@ way dynamically.</text>
 <wire x1="-198.12" y1="68.58" x2="-190.5" y2="68.58" width="0.1524" layer="91"/>
 <label x="-190.5" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="SCL"/>
+<wire x1="-22.86" y1="-78.74" x2="-20.32" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-22.86" y="-78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="P0.09/NFC1" class="0">
 <segment>
@@ -5879,6 +6118,16 @@ way dynamically.</text>
 <wire x1="96.52" y1="45.72" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="P0.09"/>
 <label x="101.6" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="287.02" y1="-60.96" x2="287.02" y2="-78.74" width="0.1524" layer="91"/>
+<label x="287.02" y="-60.96" size="4.572" layer="95" rot="R180" xref="yes"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="-78.74" x2="289.56" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="-78.74" x2="289.56" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="-91.44" x2="302.26" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="NFCANTENNA" gate="G$1" pin="NFC1"/>
+<wire x1="302.26" y1="-91.44" x2="302.26" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -5931,6 +6180,14 @@ way dynamically.</text>
 <wire x1="109.22" y1="45.72" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="P0.10"/>
 <label x="104.14" y="48.26" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="332.74" y1="-60.96" x2="332.74" y2="-78.74" width="0.1524" layer="91"/>
+<label x="332.74" y="-60.96" size="4.572" layer="95" rot="R180" xref="yes"/>
+<pinref part="NFCANTENNA" gate="G$1" pin="NFC2"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="307.34" y1="-96.52" x2="332.74" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="-96.52" x2="332.74" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DFU" class="0">
@@ -6382,6 +6639,18 @@ way dynamically.</text>
 <pinref part="J1" gate="G$1" pin="5"/>
 <wire x1="-198.12" y1="76.2" x2="-190.5" y2="76.2" width="0.1524" layer="91"/>
 <label x="-190.5" y="76.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WP" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="WP"/>
+<wire x1="-22.86" y1="-81.28" x2="-20.32" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-22.86" y="-81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="P0.02/AIN0"/>
+<wire x1="83.82" y1="66.04" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
+<label x="83.82" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
