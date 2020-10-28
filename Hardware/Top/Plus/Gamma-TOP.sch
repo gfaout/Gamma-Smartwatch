@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5778,8 +5778,6 @@ way dynamically.</text>
 </segment>
 <segment>
 <pinref part="GND1" gate="G$1" pin="GND"/>
-<pinref part="SW1" gate="G$1" pin="4"/>
-<wire x1="307.34" y1="165.1" x2="304.8" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="3"/>
 <wire x1="304.8" y1="167.64" x2="307.34" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="167.64" x2="307.34" y2="165.1" width="0.1524" layer="91"/>
@@ -5789,8 +5787,6 @@ way dynamically.</text>
 <wire x1="345.44" y1="167.64" x2="347.98" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="G$1" pin="GND"/>
 <wire x1="347.98" y1="167.64" x2="347.98" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="G$1" pin="4"/>
-<wire x1="347.98" y1="165.1" x2="345.44" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-167.64" y1="147.32" x2="-170.18" y2="147.32" width="0.1524" layer="91"/>

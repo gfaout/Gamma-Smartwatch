@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1414,10 +1414,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="J2" pad="1"/>
 <contactref element="R11" pad="1"/>
 <contactref element="CHRG1" pad="2"/>
-<contactref element="SW1" pad="B2"/>
 <contactref element="SW1" pad="B1"/>
 <contactref element="SW2" pad="B1"/>
-<contactref element="SW2" pad="B2"/>
 <contactref element="JP1" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C2" pad="2"/>
@@ -1553,8 +1551,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C19" pad="2"/>
 <contactref element="C18" pad="2"/>
 <contactref element="C21" pad="2"/>
-<wire x1="25.9714" y1="1.6616" x2="28.1814" y2="1.7124" width="0" layer="19" extent="1-1"/>
-<wire x1="18.0214" y1="1.6616" x2="16.3576" y2="4.572" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="U3" pad="37"/>
@@ -2326,14 +2322,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.6756" y1="26.3546" x2="20.6756" y2="25.9228" width="0.1524" layer="16"/>
 <wire x1="20.6756" y1="25.9228" x2="14.788509375" y2="20.035709375" width="0.1524" layer="16"/>
 <wire x1="14.788509375" y1="20.035709375" x2="7.8994" y2="20.015046875" width="0.1524" layer="16"/>
-<via x="6.2992" y="20.447" extent="1-16" drill="0.35"/>
+<via x="7.0104" y="20.3962" extent="1-16" drill="0.35"/>
 <wire x1="22.4764" y1="26.318" x2="20.7122" y2="26.318" width="0.1524" layer="1"/>
 <wire x1="20.7122" y1="26.318" x2="20.6756" y2="26.3546" width="0.1524" layer="1"/>
 <wire x1="3.3528" y1="21.043" x2="3.9116" y2="20.4842" width="0.1524" layer="1"/>
-<wire x1="6.262" y1="20.4842" x2="6.2992" y2="20.447" width="0.1524" layer="1"/>
-<wire x1="3.9116" y1="20.4842" x2="6.262" y2="20.4842" width="0.1524" layer="1"/>
-<wire x1="7.8994" y1="20.015046875" x2="6.731153125" y2="20.015046875" width="0.1524" layer="16"/>
-<wire x1="6.731153125" y1="20.015046875" x2="6.2992" y2="20.447" width="0.1524" layer="16"/>
+<wire x1="6.9224" y1="20.4842" x2="7.0104" y2="20.3962" width="0.1524" layer="1"/>
+<wire x1="3.9116" y1="20.4842" x2="6.9224" y2="20.4842" width="0.1524" layer="1"/>
+<wire x1="7.8994" y1="20.015046875" x2="7.391553125" y2="20.015046875" width="0.1524" layer="16"/>
+<wire x1="7.391553125" y1="20.015046875" x2="7.0104" y2="20.3962" width="0.1524" layer="16"/>
 </signal>
 <signal name="D30/LED.CTRL">
 <contactref element="U3" pad="7"/>

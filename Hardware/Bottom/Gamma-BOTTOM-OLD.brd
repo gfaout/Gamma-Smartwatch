@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1408,10 +1408,11 @@ Please make sure your boards conform to these design rules.</description>
 <via x="10.0584" y="17.145" extent="1-16" drill="0.35"/>
 <wire x1="10.0584" y1="17.145" x2="9.5114" y2="17.145" width="0.1524" layer="1"/>
 <wire x1="9.5114" y1="17.145" x2="9.3218" y2="17.3346" width="0.1524" layer="1"/>
-<wire x1="10.0584" y1="17.145" x2="10.0584" y2="21.7424" width="0.1524" layer="16"/>
-<via x="10.0584" y="21.7424" extent="1-16" drill="0.35"/>
-<wire x1="10.0584" y1="21.7424" x2="10.0584" y2="32.9784" width="0.1524" layer="1"/>
-<wire x1="10.0584" y1="32.9784" x2="10.08" y2="33" width="0.1524" layer="1"/>
+<wire x1="10.0076" y1="23.4188" x2="10.0076" y2="17.1958" width="0.1524" layer="16"/>
+<wire x1="10.0584" y1="17.145" x2="10.0076" y2="17.1958" width="0.1524" layer="16"/>
+<via x="10.0076" y="23.4188" extent="1-16" drill="0.35"/>
+<wire x1="10.0076" y1="23.4188" x2="10.0076" y2="32.9276" width="0.1524" layer="1"/>
+<wire x1="10.0076" y1="32.9276" x2="10.08" y2="33" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
